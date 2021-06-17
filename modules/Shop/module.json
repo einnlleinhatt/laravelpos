@@ -1,0 +1,13 @@
+{
+  "name": "Shop",
+  "alias": "shop",
+  "route": "shop",
+  "description": "Shop Module",
+  "keywords": [],
+  "active": 1,
+  "order": 1,
+  "providers": ["Modules\\Shop\\Providers\\ShopServiceProvider"],
+  "aliases": {},
+  "files": ["Helpers/helpers.php"],
+  "requires": []
+}
