@@ -3,7 +3,6 @@
 /public/storage
 /storage/*.key
 /dist
-/vendor
 /.idea
 /.vscode
 /nbproject

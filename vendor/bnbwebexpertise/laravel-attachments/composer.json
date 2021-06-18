@@ -1,0 +1,44 @@
+{
+  "name": "bnbwebexpertise/laravel-attachments",
+  "description": "Attach files to your models, retrievable by key, group name or using the Eloquent relationship.",
+  "type": "package",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "B&B Web Expertise",
+      "email": "support@bnb.re"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "illuminate/database": ">=5.5",
+    "illuminate/routing": ">=5.5",
+    "illuminate/support": ">=5.5",
+    "illuminate/console": ">=5.5",
+    "illuminate/encryption": ">=5.5",
+    "bnbwebexpertise/php-uuid": ">=0.0.2",
+    "doctrine/dbal": "~2.5",
+    "nesbot/carbon": "^1.20 || ^2.0"
+  },
+  "require-dev": {
+    "laravel/framework": ">=5.5"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "Bnb\\Laravel\\Attachments\\": "src/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.x-dev",
+      "dev-L5.4": "0.x-dev"
+    },
+    "laravel": {
+      "providers": [
+        "Bnb\\Laravel\\Attachments\\AttachmentsServiceProvider"
+      ]
+    }
+  }
+}
