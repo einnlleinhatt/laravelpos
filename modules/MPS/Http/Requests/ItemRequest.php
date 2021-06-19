@@ -48,7 +48,7 @@ class ItemRequest extends FormRequest
             'cost'                                => 'required|numeric',
             'max_discount'                        => 'nullable',
             'price'                               => 'required|numeric',
-            'expiry_date'                         => 'nullable|boolean',
+            'expiry'                         	  => 'nullable|boolean',
             'is_stock'                            => 'nullable|boolean',
             'has_variants'                        => 'nullable|boolean',
             'variants'                            => 'nullable|array',
