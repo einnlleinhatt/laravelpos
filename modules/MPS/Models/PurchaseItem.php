@@ -34,7 +34,8 @@ class PurchaseItem extends Base
 
     public function createSerials($pId, $serials)
     {
-        if ($pId && $serials) {
+        //if ($pId && $serials) {
+		if ($pId && $serials && $serials[0]['number']) {
             foreach ($serials as $serial) {
                 Serial::updateOrCreate(
                     ['number' => $serial],
