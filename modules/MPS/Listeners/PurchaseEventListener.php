@@ -48,7 +48,7 @@ class PurchaseEventListener
 
         // TODO: mark purchase paid check if supplier has balance
         if (!$original_purchase || $original_purchase->draft) {
-            //if (safe_email($this->purchase->supplier->email) && !default_supplier($this->purchase->supplier_id)) {
+            //if (safe_email($this->purchase->supplier->email) && !default_supplier($this->purchase->supplier_id))
 			if (safe_email($this->purchase->supplier->email)) {
                 $this->purchase->supplier->notify(new \Modules\MPS\Notifications\PurchaseCreated($this->purchase));
             }
